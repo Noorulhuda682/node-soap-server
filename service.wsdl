@@ -50,7 +50,7 @@
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
     <wsdl:operation name="MessageSplitter">
       <soap:operation soapAction="MessageSplitter" style="document"/>
-      <wsdl:input>
+      <wsdl:input>message
         <soap:body use="literal"/>
       </wsdl:input>
       <wsdl:output>

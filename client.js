@@ -4,7 +4,7 @@ var url = 'http://localhost:8000/wsdl?wsdl';
 
 // Create client
 soap.createClient(url, function (err, client) {
-  if (err){
+  if (err) {
     throw err;
   }
   /* 
@@ -19,7 +19,7 @@ soap.createClient(url, function (err, client) {
   client.MessageSplitter(args, function (err, res) {
     if (err)
       throw err;
-      // print the service returned result
-    console.log(res); 
+    // print the service returned result
+    console.log(res);
   });
 });
